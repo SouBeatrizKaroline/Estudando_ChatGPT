@@ -1,0 +1,61 @@
+body {
+    background-color: #eee;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  #game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  
+  .player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+  }
+  
+  .health-bar {
+    width: 150px;
+    height: 20px;
+    background-color: #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .health {
+    height: 100%;
+    background-color: green;
+  }
+  
+  .character {
+    width: 150px;
+    height: 150px;
+    background-image: url("https://i.imgur.com/5VfPczW.png");
+    background-position: center;
+    background-size: contain;
+  }
+  
+  .attack {
+    animation-name: attack;
+    animation-duration: 0.3s;
+  }
+  
+  @keyframes attack {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(30px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }  
